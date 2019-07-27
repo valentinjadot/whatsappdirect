@@ -1,0 +1,50 @@
+<html> 
+
+
+<style>
+
+body {
+    background-color: rgba(0,0,0,.04);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
+
+}
+.container {
+    position: absolute;
+    top:10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.container p {
+    line-height: 1.5rem;
+    padding-bottom: 2rem;
+    max-width: 900px;
+    font-size: 2rem;
+}
+
+.button {
+  
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+  padding: 16px 24px;
+  background: #1ebea5;
+  /* background: linear-gradient(155deg, rgba(26,35,126,1) 0%, rgba(0,150,136,1) 100%); */
+  border-radius: 8px;
+  border: 2px solid #1ebea5;
+  text-decoration: none;
+  text-shadow: 0 1px 1px rgba(0,0,0,.5);
+  box-shadow: inset 0 -1px 0 rgba(100,121,143,0.122), 0 3px 4px -2px rgba(0,0,0,.3);
+  margin-right: 16px;
+}
+
+</style>
+
+<body>
+
+    <div class="container">
+        <p>Drag and drop this button to your favourites:</p>
+<a class="button" href="javascript:window.location = 'https://api.whatsapp.com/send?phone='+prompt('Send a message to this phone number:', '+56').replace(/ +|\+/g,'');">Direct WhatsApp message</a>
+</div>
+</body>
+</html>
